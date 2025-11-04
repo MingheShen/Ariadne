@@ -120,47 +120,22 @@
         <div class="container">
           <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-              <h2 class="title is-3">Training Dynamics</h2>
+              <h2 class="title is-3">RLVR Enables VLMs to Break Reasoning Boundaries</h2>
               <div class="content has-text-justified">
                 <p>
-                    With only <u>1,200 samples</u> from each subset, <strong>AlphaMed</strong> already outperforms strong baselines trained with distilled CoT data, by training with minimal RL. Interestingly, we observe <u>distinct training dynamics</u> across different training sets, which we find closely linked to <u>dataset informativeness</u>. In particular, datasets with <u>longer question lengths</u> tend to provide richer supervision signals, resulting in more stable training and <u>delayed saturation</u>, thus benefiting RL training.
+					The reward trajectory during GRPO training on AlphaMaze, along with quantitative evaluations on the test set. Across all evaluated movement step ranges, Ariadne shows a consistent advantage over its base model, Qwen2.5-VL-7B-Instruct. For Qwen2.5-VL-7B-Instruct, we perform eight rollouts to confirm model stability and observe that performance drops to zero when the path requires three movement steps or three turns, which we define as the model’s reasoning boundary. After RLVR training, Ariadne’s success rate rises to over 50% on 3 step cases and over 10% on 3 turn cases, and the collapse point shifts from 3 to 5, indicating that RLVR effectively extends the model’s reasoning boundary to more complex path configurations.
                 </p>
                 <div class="box m-5">
                     <div class="content has-text-centered">
-                      <img src="static/images/single-sub-dataset.png" alt="main" class="center" width="100%"/>
-                    </div>
-                    <div class="content has-text-centered">
-                      <img src="static/images/traindyn.png" alt="main" class="center" width="100%"/>
+                      <img src="static/images/train.png" alt="main" class="center" width="100%"/>
                     </div>
                   </div>
               </div>
             </div>
           </div>
-
-          
           <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-              <h2 class="title is-3">Qualitative Results of AlphaMed</h2>
-              <div class="content has-text-justified">
-                <p>
-                  We train <strong>AlphaMed</strong> purely with <u>multiple choice QA supervision</u> without any <u>chain of thought annotations</u> to encourage the emergence of <u>structured reasoning</u>. Intriguingly, as illustrated in the figure, AlphaMed performs <u>step by step clinical calculations</u> and even aligns its answer with <u>quantitative risk metrics</u>. This showcases a form of <u>emergent deliberate reasoning</u> despite the absence of <u>explicit reasoning supervision</u>.
-                </p>
-                <div class="box m-5">
-                    <div class="content has-text-centered">
-                      <img src="static/images/q2q.png" alt="main" class="center" width="80%"/>
-                    </div>
-                    <div class="content has-text-centered">
-                      <img src="static/images/q2a.png" alt="main" class="center" width="80%"/>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          
-          
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title is-3">Performance of AlphaMed</h2>
+              <h2 class="title is-3">RLVR Extends VLM Reasoning to Real-world Tasks</h2>
               <div class="content has-text-justified">
                 <p>
 					Ariadne achieves strong performance on MapBench and ReasonMap. The model generalizes well across diverse spatial layouts, from unstructured outdoor networks to structured indoor grids, and demonstrates clear gains in long-horizon, multi-turn reasoning. These improvements are most apparent under high path complexity and extended reasoning chains, where instruction-tuned baselines degrade notably. Together, the results suggest that GRPO training on synthetic maze data effectively enhances spatial-visual reasoning, improving the model’s capability to handle complex real-world tasks.
