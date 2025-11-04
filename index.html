@@ -2,10 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL">
-    <meta property="og:title" content="Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL" />
-    <meta property="og:description" content="We propose an approach to incentivize mutlimodal reasoning capabilities" />
-    <meta property="og:url" content="https://github.com/TIGER-AI-Lab/VL-Rethinker/" />
+    <meta name="description" content="Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries">
+    <meta property="og:title" content="Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries" />
+    <meta property="og:url" content="https://github.com/MingheShen/Ariadne/" />
     <meta property="og:image" content="" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -56,7 +55,7 @@
                             <div class="publication-links">
                                 <!-- GitHub link -->
                                 <span class="link-block">
-                                    <a href="https://huggingface.co/collections/che111/alphamed-68308110ce161e1e0010738c" target="_blank"
+                                    <a href="https://huggingface.co/KOKKKOKK/Ariadne" target="_blank"
                                     class="external-link button is-normal is-rounded is-dark">
                                     <span class="icon">
                                         <i class="fab fa-github"></i>
@@ -76,7 +75,7 @@
                                 </span>
 
                                 <span class="link-block">
-                                  <a href="https://huggingface.co/collections/che111/alphamed-68308110ce161e1e0010738c" target="_blank"
+                                  <a href="https://huggingface.co/KOKKKOKK/Ariadne" target="_blank"
                                   class="external-link button is-normal is-rounded is-dark">
                                       <span class="icon">
                                         🤗
@@ -85,7 +84,7 @@
                                   </a>
                                 </span>
                                 <span class="link-block">
-                                  <a href="https://huggingface.co/datasets/che111/AlphaMed19K" target="_blank"
+                                  <a href="https://huggingface.co/KOKKKOKK/Ariadne" target="_blank"
                                   class="external-link button is-normal is-rounded is-dark">
                                       <span class="icon">
                                         🤗
@@ -106,27 +105,11 @@
           <!-- Abstract. -->
           <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-              <h2 class="title is-3">🔔News</h2>
-			  <div class="content has-text-justified">
-				<p>
-					<b>🔥[2025-09-28] Our work has been accepted by NeurIPS 2025 The Second Workshop on GenAI for Health!</b>
-				</p>
-			</div>
-              <div class="content has-text-justified">
-                <p>
-                    <b>🔥[2025-06-01] Our dataset <a href="https://huggingface.co/datasets/che111/AlphaMed19K">AlphaMed19K</a> is out 🚀. It includes a comprehensive collection of 19K medical QAs. </b>
-                </p>
-              </div>
-              <div class="content has-text-justified">
-                <p>
-                    <b>🔥[2025-05-27] Our paper <a href="https://www.arxiv.org/abs/2505.17952">AlphaMed</a> and <a href="https://huggingface.co/collections/che111/alphamed-68308110ce161e1e0010738c">Models</a> are out 🚀. </b>
-                </p>
-              </div>
               <h2 class="title is-3">Introduction</h2>
               <div class="content has-text-justified">
                 <p>
-                  Improving performance on complex tasks and enabling interpretable decision making in large language models (LLMs), especially for clinical applications, requires effective reasoning. Yet this remains challenging without supervised fine-tuning (SFT) on costly chain-of-thought (CoT) data distilled from closed-source models (e.g., GPT-4o). In this work, we present <strong>AlphaMed</strong>, the first medical LLM to show that reasoning capability can emerge purely through reinforcement learning (RL), using minimalist rule-based rewards on public multiple-choice QA datasets, without relying on SFT or distilled CoT data. AlphaMed achieves state-of-the-art results on six medical QA benchmarks, outperforming models trained with conventional SFT+RL pipelines. On challenging benchmarks (e.g., MedXpert), AlphaMed even surpasses larger or closed-source models such as DeepSeek-V3-671B and Claude-3.5-Sonnet. To understand the factors behind this success, we conduct a comprehensive data-centric analysis guided by three questions: <strong>(i)</strong> Can minimalist rule-based RL incentivize reasoning without distilled CoT supervision? <strong>(ii)</strong> How do dataset quantity and diversity impact reasoning? <strong>(iii)</strong> How does question difficulty shape the emergence and generalization of reasoning? Our findings show that dataset informativeness is a key driver of reasoning performance, and that minimalist RL on informative, multiple-choice QA data is effective at inducing reasoning without CoT supervision. We also observe divergent trends across benchmarks, underscoring limitations in current evaluation and the need for more challenging, reasoning-oriented medical QA benchmarks.
-                </p>
+                  While Vision-Language Models (VLMs) post-trained with Reinforcement Learning (RL) show impressive general reasoning, their evaluation is often confined to language-dominant tasks (e.g., math). This raises a critical question: can RL post-training truly extend the inherent capability boundary of a base VLM, particularly for visual-centric spatial tasks where it initially fails? To investigate this, we introduce Ariadne, a framework utilizing synthetic mazes for multi-step spatial reasoning where task difficulty (e.g., path length, turns) is precisely controlled. We leverage this controllable environment to train VLMs using Reinforcement Learning with Verified Rewards (RLVR) in a difficulty-aware curriculum. Surprisingly, post-RLVR training, the VLM achieves over 50% accuracy on a problem set where the base model scored 0%, demonstrating that our approach expands the model's initial capability boundary. To assess real-world viability, we evaluate out-of-distribution (OOD) generalization on practical benchmarks. Despite training only on synthetic maze samples, Ariadne achieves significant zero-shot improvements, averaging 16% on MapBench (e.g., museum navigation) and 24% on ReasonMap (subway transfer tasks). These results confirm that our method not only broadens the model's fundamental limits but also enhances its generalization to real-world spatial reasoning. We acknowledge our study is limited to the post-training phase, given the opaqueness of pre-training data, and hope our research motivates further work on specialized, capability-extending alignment.
+				</p>
               </div>
             </div>
           </div>
