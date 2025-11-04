@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL">
+    <meta property="og:title" content="Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL" />
+    <meta property="og:description" content="We propose an approach to incentivize mutlimodal reasoning capabilities" />
+    <meta property="og:url" content="https://github.com/TIGER-AI-Lab/VL-Rethinker/" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <title>Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">
+                            Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries
+                        </h1>
+                        <div class="is-size-5 publication-authors">
+                          <span class="author-block">Minghe Shen<sup>1</sup>,</span>
+                          <span class="author-block">Zhuo Zhi<sup>1</sup>,</span>
+                          <span class="author-block">Chonghan Liu<sup>2</sup>,</span>
+                          <br>
+                          <span class="author-block">Shuo Xing<sup>3</sup>,</span>
+                          <span class="author-block">Zhengzhong Tu<sup>3</sup>,</span>
+                          <span class="author-block">Che Liu<sup>4</sup></span>
+                      </div>                      
+                      
+                      <div class="is-size-5 publication-authors">
+                          <span class="author-block">
+                              <sup>1</sup>University College London, <sup>2</sup>University of California, Los Angeles, <sup>3</sup>Texas A&M University,
+                              <br><sup>4</sup>Imperial College London
+                          </span>
+                          <br>
+                          <span class="author-block">Corresponding to:</span>
+                          <span class="author-block">
+                              <a href="mailto:che.liu21@imperial.ac.uk">che.liu21@imperial.ac.uk</a>
+                          </span>
+                      </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- GitHub link -->
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/collections/che111/alphamed-68308110ce161e1e0010738c" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2511.00710" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="ai ai-arxiv"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <span class="link-block">
+                                  <a href="https://huggingface.co/collections/che111/alphamed-68308110ce161e1e0010738c" target="_blank"
+                                  class="external-link button is-normal is-rounded is-dark">
+                                      <span class="icon">
+                                        🤗
+                                      </span>
+                                      <span>Models</span>
+                                  </a>
+                                </span>
+                                <span class="link-block">
+                                  <a href="https://huggingface.co/datasets/che111/AlphaMed19K" target="_blank"
+                                  class="external-link button is-normal is-rounded is-dark">
+                                      <span class="icon">
+                                        🤗
+                                      </span>
+                                      <span>Datasets</span>
+                                  </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="margin-bottom: 2vh;margin-top: -6vh;">
+          <!-- Abstract. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">🔔News</h2>
+			  <div class="content has-text-justified">
+				<p>
+					<b>🔥[2025-09-28] Our work has been accepted by NeurIPS 2025 The Second Workshop on GenAI for Health!</b>
+				</p>
+			</div>
+              <div class="content has-text-justified">
+                <p>
+                    <b>🔥[2025-06-01] Our dataset <a href="https://huggingface.co/datasets/che111/AlphaMed19K">AlphaMed19K</a> is out 🚀. It includes a comprehensive collection of 19K medical QAs. </b>
+                </p>
+              </div>
+              <div class="content has-text-justified">
+                <p>
+                    <b>🔥[2025-05-27] Our paper <a href="https://www.arxiv.org/abs/2505.17952">AlphaMed</a> and <a href="https://huggingface.co/collections/che111/alphamed-68308110ce161e1e0010738c">Models</a> are out 🚀. </b>
+                </p>
+              </div>
+              <h2 class="title is-3">Introduction</h2>
+              <div class="content has-text-justified">
+                <p>
+                  Improving performance on complex tasks and enabling interpretable decision making in large language models (LLMs), especially for clinical applications, requires effective reasoning. Yet this remains challenging without supervised fine-tuning (SFT) on costly chain-of-thought (CoT) data distilled from closed-source models (e.g., GPT-4o). In this work, we present <strong>AlphaMed</strong>, the first medical LLM to show that reasoning capability can emerge purely through reinforcement learning (RL), using minimalist rule-based rewards on public multiple-choice QA datasets, without relying on SFT or distilled CoT data. AlphaMed achieves state-of-the-art results on six medical QA benchmarks, outperforming models trained with conventional SFT+RL pipelines. On challenging benchmarks (e.g., MedXpert), AlphaMed even surpasses larger or closed-source models such as DeepSeek-V3-671B and Claude-3.5-Sonnet. To understand the factors behind this success, we conduct a comprehensive data-centric analysis guided by three questions: <strong>(i)</strong> Can minimalist rule-based RL incentivize reasoning without distilled CoT supervision? <strong>(ii)</strong> How do dataset quantity and diversity impact reasoning? <strong>(iii)</strong> How does question difficulty shape the emergence and generalization of reasoning? Our findings show that dataset informativeness is a key driver of reasoning performance, and that minimalist RL on informative, multiple-choice QA data is effective at inducing reasoning without CoT supervision. We also observe divergent trends across benchmarks, underscoring limitations in current evaluation and the need for more challenging, reasoning-oriented medical QA benchmarks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/ Abstract. -->
+      </div>
+    </section>
+
+    <section class="hero is-light is-small">
+        <div class="hero-body has-text-centered">
+          <h1 class="title is-1 acecoder">
+            <span class="acecoder">AlphaMed</span>
+          </h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Training Dynamics</h2>
+              <div class="content has-text-justified">
+                <p>
+                    With only <u>1,200 samples</u> from each subset, <strong>AlphaMed</strong> already outperforms strong baselines trained with distilled CoT data, by training with minimal RL. Interestingly, we observe <u>distinct training dynamics</u> across different training sets, which we find closely linked to <u>dataset informativeness</u>. In particular, datasets with <u>longer question lengths</u> tend to provide richer supervision signals, resulting in more stable training and <u>delayed saturation</u>, thus benefiting RL training.
+                </p>
+                <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <img src="static/images/single-sub-dataset.png" alt="main" class="center" width="100%"/>
+                    </div>
+                    <div class="content has-text-centered">
+                      <img src="static/images/traindyn.png" alt="main" class="center" width="100%"/>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Qualitative Results of AlphaMed</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We train <strong>AlphaMed</strong> purely with <u>multiple choice QA supervision</u> without any <u>chain of thought annotations</u> to encourage the emergence of <u>structured reasoning</u>. Intriguingly, as illustrated in the figure, AlphaMed performs <u>step by step clinical calculations</u> and even aligns its answer with <u>quantitative risk metrics</u>. This showcases a form of <u>emergent deliberate reasoning</u> despite the absence of <u>explicit reasoning supervision</u>.
+                </p>
+                <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <img src="static/images/q2q.png" alt="main" class="center" width="80%"/>
+                    </div>
+                    <div class="content has-text-centered">
+                      <img src="static/images/q2a.png" alt="main" class="center" width="80%"/>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Performance of AlphaMed</h2>
+              <div class="content has-text-justified">
+                <p>
+                  AlphaMed advances state-of-the-art performance across six medical QA benchmarks, including both in-domain tasks like MedQA and PubMedQA, and out-of-domain challenges such as MMLU-ProM, GPQA-M, and MedXpert. Remarkably, AlphaMed(8B) not only outperforms all models under 10B but also surpasses much larger models such as QwQ-32B. Meanwhile, AlphaMed(70B) sets a new open-source record, outperforming proprietary models like GPT-4o and significantly stronger baselines such as DeepSeek-V3 (761B). Without using any distilled chain-of-thought data, AlphaMed demonstrates strong reasoning capabilities purely through minimalist reinforcement learning.
+                </p>
+                <div class="box m-5">
+                  <div class="content has-text-centered">
+                    <img src="static/images/8-70b.png" alt="main" class="center" width="100%"/>
+                  </div>
+                    <div class="content has-text-centered">
+                      <img src="static/images/tab1.png" alt="main" class="center" width="100%"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Explore More</h2>
+              <div class="content has-text-justified">
+                <p>
+                    Explore more about details of our approach, analysis of learned rethinking behaviors, and insights in medical LLM training within <a href="https://www.arxiv.org/abs/2505.17952">our paper</a>!
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+	<!-- BibTeX citation -->
+	<section class="section" id="BibTeX">
+	    <div class="container is-max-desktop content">
+	        <h2 class="title">Reference</h2>
+	        If you find our work useful, please give us a free cite:
+	        <pre><code>
+			@article{alhamed,
+			      title={Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL},
+			      author = {Che Liu and Haozhe Wang and Jiazhen Pan and Zhongwei Wan and Yong Dai and Fangzhen Lin and Wenjia Bai and Daniel Rueckert and Rossella Arcucci},
+			      journal={arXiv preprint arXiv: 2505.17952},
+			      year={2025}
+			}
+	        </code></pre>
+	    </div>
+	</section>
+
+	<footer class="footer">
+	    <div class="container">
+	        <div class="columns is-centered">
+	            <div class="column is-8">
+	                <div class="content has-text-centered">
+	                    <p>
+	                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+</body>
+</html>
