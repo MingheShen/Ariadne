@@ -1,6 +1,4 @@
 import os
-os.environ["MODELSCOPE_CACHE"] = "/scratch/uceems6/cache_root"
-os.environ["HF_HOME"] = "/scratch/uceems6/cache_root"
 import json
 import base64
 import re
