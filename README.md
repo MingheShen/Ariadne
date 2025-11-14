@@ -93,7 +93,7 @@ For more optional dependencies, you can refer to [here](https://github.com/model
 
 - Training on 8 × NVIDIA A100 (40GB) GPUs by default:
 
-        bash grpo.sh
+        bash ./src/grpo.sh
         
     Tip: report to W&B by default; if there's an error, try not to report.
 
