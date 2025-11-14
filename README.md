@@ -7,7 +7,6 @@
 <a href="https://huggingface.co/datasets/jan-hq/Maze-Reasoning" target="_blank"><img alt="Data" src="https://img.shields.io/badge/🤗 Hugging Face Datasets-8e44ad?color=8e44ad" /></a>
 </p>
 
-
 Ariadne is a framework utilizing synthetic mazes for multi-step spatial reasoning with precisely controlled task difficulty (e.g., path length, turns).
 We employ this controllable setup to train VLMs using Reinforcement Learning with Verified Rewards (RLVR) under a difficulty-aware curriculum.
 
@@ -33,7 +32,7 @@ https://github.com/modelscope/ms-swift
 -   **Backbone:** Qwen2.5-VL-7B-Instruct
 -   **Training Framework:** Swift RLHF (GRPO)
 -   **Compute:** 8 × NVIDIA A100 (40GB)
--   **Dataset:** Auto-generated multimodal maze dataset
+-   **Dataset:** [AlphaMaze](https://huggingface.co/datasets/jan-hq/Maze-Reasoning/viewer?views%5B%5D=train)
     -   `train_am.jsonl` (4,700 samples)
     -   `test_am.jsonl` (1,000 samples)
 -   **Rewards:** `format checking`, `action-format checking`, and `path correctness`
@@ -42,6 +41,7 @@ https://github.com/modelscope/ms-swift
 ------------------------------------------------------------------------
 
 ## 🛠️ Installation (Swift)
+
 To install using pip:
 ```shell
 pip install ms-swift -U
@@ -113,7 +113,7 @@ For more optional dependencies, you can refer to [here](https://github.com/model
     resp_list = engine.infer([infer_request], request_config)
     print(f'response: {resp_list[0].choices[0].message.content}')
     ```
-
+    
 ------------------------------------------------------------------------
 
 ## 🙏 Citation
