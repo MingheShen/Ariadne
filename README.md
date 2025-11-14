@@ -1,10 +1,12 @@
-# **Ariadne: Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries**
+## **Ariadne: Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries**
 
 <p align="center">
-    <a href="https://huggingface.co/KOKKKOKK/Ariadne"> <img src="https://img.shields.io/badge/HuggingFace-Model-yellow.svg"></a>
-    <a href="https://arxiv.org/abs/2511.00710"><img src="https://img.shields.io/badge/arXiv-Paper-red.svg"></a>
-    <a href="./LICENSE"> <img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+<a href="https://mingheshen.github.io/Ariadne/" target="_blank"><img alt="Homepage" src="https://img.shields.io/badge/🌍 Homepage-d35400?color=d35400" /></a>
+<a href="https://arxiv.org/abs/2511.00710" target="_blank"><img alt="Paper" src="https://img.shields.io/badge/📄 Paper-28a745?color=28a745" /></a>
+<a href="https://huggingface.co/KOKKKOKK/Ariadne" target="_blank"><img alt="Checkpoint" src="https://img.shields.io/badge/🤗 Hugging Face Models-2980b9?color=2980b9" /></a>
+<a href="https://huggingface.co/datasets/jan-hq/Maze-Reasoning" target="_blank"><img alt="Data" src="https://img.shields.io/badge/🤗 Hugging Face Datasets-8e44ad?color=8e44ad" /></a>
 </p>
+
 
 Ariadne is a **vision-language model** trained on grid-based maze reasoning tasks to probe VLM reasoning boundaries.
 Built upon **Qwen2.5-VL-7B-Instruct**, the model learns to infer **step-wise visual navigation paths** through RLVR, explicit reasoning traces, and structured directional tokens.
