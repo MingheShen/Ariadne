@@ -1,8 +1,8 @@
 # **Ariadne: Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries**
 
 <p align="center">
-    <a href="https://huggingface.co/KOKKKOKK/Ariadne"> <img src="https://img.shields.io/badge/HuggingFace-Model-yellow.svg">
-    </a> <a href="https://arxiv.org/abs/2511.00710"> <img src="https://img.shields.io/badge/arXiv-Paper-red.svg"></a>
+    <a href="https://huggingface.co/KOKKKOKK/Ariadne"> <img src="https://img.shields.io/badge/HuggingFace-Model-yellow.svg"></a>
+    <a href="https://arxiv.org/abs/2511.00710"><img src="https://img.shields.io/badge/arXiv-Paper-red.svg"></a>
     <a href="./LICENSE"> <img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
 </p>
 
