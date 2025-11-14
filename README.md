@@ -32,9 +32,10 @@ https://github.com/modelscope/ms-swift
 -   **Backbone:** Qwen2.5-VL-7B-Instruct
 -   **Training Framework:** Swift RLHF (GRPO)
 -   **Compute:** 8 × NVIDIA A100 (40GB)
--   **Dataset:** [AlphaMaze](https://huggingface.co/datasets/jan-hq/Maze-Reasoning/viewer?views%5B%5D=train)
+-   **Dataset for training:** [AlphaMaze](https://huggingface.co/datasets/jan-hq/Maze-Reasoning/viewer?views%5B%5D=train)
     -   `train_am.jsonl` (4,700 samples)
     -   `test_am.jsonl` (1,000 samples)
+-   **Dataset for test:** [AlphaMaze](https://huggingface.co/datasets/jan-hq/Maze-Reasoning/viewer?views%5B%5D=train), [MapBench](https://arxiv.org/abs/2503.14607) and [ReasonMap](https://arxiv.org/abs/2505.18675)
 -   **Rewards:** `format checking`, `action-format checking`, and `path correctness`
 -   **Output Format:** `<think>` reasoning `</think>` + `<|up|><|down|><|left|><|right|>...` (action tokens)
 
