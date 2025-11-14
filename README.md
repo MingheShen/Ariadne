@@ -100,13 +100,13 @@ For more optional dependencies, you can refer to [here](https://github.com/model
 
         ./GRPO_MAZE/
   
-    Please indicate this directory for inference and testing.
+    Please indicate this directory or your modified directory for inference and testing.
 
 - Inference example:
 
     ```python
     # Perform inference using the native PyTorch engine
-    engine = PtEngine("./GRPO_MAZE/")
+    engine = PtEngine("./GRPO_MAZE/") # or your dir
     infer_request = InferRequest(messages=[{'role': 'user', 'content': 'who are you?'}])
     request_config = RequestConfig(max_tokens=max_new_tokens, temperature=temperature)
     
@@ -118,7 +118,7 @@ For more optional dependencies, you can refer to [here](https://github.com/model
 
 ## 🙏 Citation
 
-```
+```bibtex
 @article{shen2025ariadne,
   title={Ariadne: A Controllable Framework for Probing and Extending VLM Reasoning Boundaries},
   author={Shen, Minghe and Zhi, Zhuo and Liu, Chonghan and Xing, Shuo and Tu, Zhengzhong and Liu, Che},
