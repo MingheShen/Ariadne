@@ -1,13 +1,10 @@
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-export WANDB_API_KEY=47cad383a2e1b48737c9d92694709d6de14309a0
-export MASTER_ADDR=127.0.0.1
-export MASTER_PORT=29500
 export SWIFT_DISTRIBUTED_BACKEND=nccl
 export GLOO_SOCKET_IFNAME=lo
 export MAX_PIXELS=65536
 export NPROC_PER_NODE=8
 export OMP_NUM_THREADS=1
-export WANDB_BASE_URL=https://api.bandw.top
+# export WANDB_BASE_URL=https://api.bandw.top
 
 swift rlhf \
     --rlhf_type grpo \
