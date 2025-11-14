@@ -75,7 +75,7 @@ For more optional dependencies, you can refer to [here](https://github.com/model
 - Dataset Generation:
     Download data from <a href="https://huggingface.co/datasets/jan-hq/Maze-Reasoning" target="_blank"><img alt="Data" src="https://img.shields.io/badge/🤗 Hugging Face Datasets-8e44ad?color=8e44ad" /></a>.
   
-    Training and test datasets are generated via `dataset_gene.py`.
+    The training dataset is generated via `dataset_gene.py`.
   
     Each JSONL entry contains a base64-encoded maze image, a user prompt, and a ground-truth action sequence.
 
