@@ -23,7 +23,7 @@ as models generalize better to longer-step reasoning in noisy, natural environme
 benchmarks, [MapBench](https://arxiv.org/abs/2503.14607) (16%) and [ReasonMap](https://arxiv.org/abs/2505.18675) (24%), highlighting its effectiveness in enhancing
 spatial reasoning beyond training conditions.
 
-This project is developed using the **Swift RLHF framework**:
+This project is developed using the **Swift framework**:
 https://github.com/modelscope/ms-swift
 
 ------------------------------------------------------------------------
